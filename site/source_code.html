@@ -7,8 +7,139 @@
     </head>
 
     <body>
-        <!--this is where you'll put the source code-->
-        <p>This is where we'll put the source code once it's ready.</p>
+        <p>The following code was used to create our slides:</p>
+        <!--source code-->
+        <pre>
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small}
+    
+    
+\title{Introduction to LaTeX}
+\author{Mosum Janjua, Luis Jaco, Inderpreet Singh, Gurveer Waraich}
+\institute{NYIT}
+\date{\today}
+    
+\begin{document}
+    
+% Title Slide
+\begin{frame}
+    \titlepage
+\end{frame}
+    
+% Slide 1: Overview
+\begin{frame}
+    \frametitle{Overview}
+    \begin{itemize}
+        \item What is LaTeX?
+        \item Why use LaTeX?
+        \item Basic Syntax
+        \item Creating Documents
+        \item Resources for Learning
+    \end{itemize}
+\end{frame}
+    
+% Slide 2: What is LaTeX?
+\begin{frame}
+    \frametitle{What is LaTeX?}
+    \begin{itemize}
+        \item A typesetting system for producing high-quality documents.
+        \item Commonly used for academic papers, theses, and presentations.
+        \item Focuses on content, not layout.
+    \end{itemize}
+\end{frame}
+    
+% Slide 3: Why Use LaTeX?
+\begin{frame}
+    \frametitle{Why Use LaTeX?}
+    \begin{itemize}
+        \item Excellent for handling complex documents.
+        \item Superior formatting for mathematical expressions.
+        \item High control over document layout and structure.
+        \item Cross-referencing, bibliographies, and indexing.
+    \end{itemize}
+\end{frame}
+    
+% Slide 4: Basic Syntax
+\begin{frame}
+    \frametitle{Basic Syntax}
+    \begin{itemize}
+        \item LaTeX documents consist of text and commands.
+        \item Commands start with a backslash (\textbackslash).
+        \item Example: \texttt{\textbackslash section\{Introduction\}}
+        \item Inline math: \( E = mc^2 \)
+        \item Block math:
+        \[
+            a^2 + b^2 = c^2
+        \]
+    \end{itemize}
+\end{frame}
+    
+% Slide 5: Creating Documents
+\begin{frame}[fragile] % Add 'fragile' option here
+    \frametitle{Creating Documents}
+    \begin{itemize}
+        \item Basic structure of a LaTeX document:
+        \begin{lstlisting}
+\documentclass{article}
+\begin{document}
+    Your content here.
+\end{document}
+        \end{lstlisting}
+        \item Use packages for additional functionality.
+        \item Compile to PDF using a LaTeX editor or Overleaf.
+    \end{itemize}
+\end{frame}
+    
+% Slide 6: Useful Packages
+\begin{frame}
+    \frametitle{Useful Packages}
+    \begin{itemize}
+        \item \texttt{amsmath} - Advanced math typesetting.
+        \item \texttt{graphicx} - Inserting images.
+        \item \texttt{biblatex} - Bibliographies.
+        \item \texttt{beamer} - Presentations.
+    \end{itemize}
+\end{frame}
+    
+% Slide 7: Tips for Beginners
+\begin{frame}
+    \frametitle{Tips for Beginners}
+    \begin{itemize}
+        \item Use Overleaf for an easy start.
+        \item Refer to the LaTeX documentation for commands.
+        \item Practice by writing simple documents.
+        \item Explore templates for quick formatting.
+    \end{itemize}
+\end{frame}
+    
+% Slide 8: Resources for Learning
+\begin{frame}
+    \frametitle{Resources for Learning}
+    \begin{itemize}
+        \item Official LaTeX documentation: \url{https://www.latex-project.org/}
+        \item Overleaf tutorials: \url{https://www.overleaf.com/learn}
+        \item Books: "LaTeX: A Document Preparation System" by Leslie Lamport.
+    \end{itemize}
+\end{frame}
+    
+% Slide 9: Questions
+\begin{frame}
+    \frametitle{Questions}
+    \centering
+    Any questions?
+\end{frame}
+    
+% Closing Slide
+\begin{frame}
+    \frametitle{Thank You!}
+    \centering
+    Thank you for attending the introduction to LaTeX.
+\end{frame}
+    
+\end{document}            
+             </pre>
         <a href="https://sites.google.com/nyit.edu/ljaco-latex/home">BACK TO HOME</a>
     </body>
 </html>
